@@ -1,0 +1,38 @@
+﻿extends layout
+
+block content
+    div(ng-controller="navController")
+        nav.navbar.navbar-default
+            .container
+                .navbar-header
+                    a.navbar-brand(href="/") Angular Routing Example
+
+                ul.nav.navbar-nav.navbar-right
+                    li
+                        a(href="#") Home
+                    li
+                        a(href="#about") About
+                    li  
+                        a(href="#page/~0") Page 'A'
+                    li  
+                        a(href="#page/~1") Page 'B'
+                    li  
+                        a(href="#page/~0/page/~0/page/~2/") Nested page
+                    li  
+                        a(href="#page/~2/about") Invalid page
+                    li  
+                        a(href="#page/~0/about/") Nested about
+                    li
+                        a(href="#contact") Contact
+
+        #main
+            div(ng-include="headerTemplateSelector()")
+            //div(ng-view)
+  
+        footer.text-center
+            p View the tutorial on 
+                a(href="http://scotch.io/tutorials/javascript/single-page-apps-with-angularjs-routing-and-templating") Scotch.io
+  
+            p View a tutorial on 
+                a(href="http://scotch.io/tutorials/javascript/animating-angularjs-apps-ngview") Animating Your Angular Single Page App
+  

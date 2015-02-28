@@ -1,0 +1,2 @@
+C:\sources\NgRoute1\NgRoute1\obj\Debug\NgRoute1.njsprojResolveAssemblyReference.cache
+C:\sources\NgRoute1\NgRoute1\bin\Microsoft.NodejsTools.WebRole.dll

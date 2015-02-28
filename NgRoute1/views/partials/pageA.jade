@@ -1,0 +1,20 @@
+﻿.jumbotron.text-center(ng-controller="pageAController")
+    h1 Page type 'A'
+    
+    p {{ message }}
+
+    .row
+        .col-md-3
+            .row
+                label Child content:
+                    select.form-control(ng-model="selector.selected" ng-options="opt.text for opt in selector.items")
+
+            .row
+                label Dummy selector
+                    select.form-control(ng-model="dummy" ng-options="opt.text for opt in selector.items")
+
+        .col-md-offset-3.col-md-9
+            .panel.panel-default
+                .panel-heading Panel heading without title
+                .panel-body(ng-include="headerTemplateSelector()")
+                //.panel-body(ng-view)
